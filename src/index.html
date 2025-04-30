@@ -4,20 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Galeria i formularz</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Jeśli chcesz osobne style do galerii i formularza -->
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/form.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <!-- Loads the specified .html file -->
+      <!-- Wstawienie galerii -->
+      <load src="./partials/01-gallery.html" />
+
+      <!-- Wstawienie formularza -->
+      <load src="./partials/02-form.html" />
+
+      <!-- Domyślne treści szablonu -->
       <load src="./partials/vite-promo.html" />
       <load src="./partials/badges.html" />
     </main>
 
     <load src="./partials/footer.html" />
 
+    <!-- Skrypty Twoich zadań -->
+    <script type="module" src="./js/01-gallery.js"></script>
+    <script type="module" src="./js/02-form.js"></script>
+
+    <!-- Główny skrypt projektu -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>
+
